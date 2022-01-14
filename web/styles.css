@@ -1,0 +1,170 @@
+@import url('https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600&display=swap');
+body{
+    font-family: 'Playfair Display', serif;
+    background-color: #141414; /* couleur du fond */
+    padding: 0;
+    margin: 0;
+    color: #fff; /* couleur du text */
+}
+body .page{
+    margin: 20px 80px
+}
+
+/* Barre de navigation */
+nav{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    position: sticky;
+    top: 0;
+    background-color: #141414; /* couleur du fond de la barre de navigation */
+    padding: 10px 0px; /* marge interieur */
+}
+nav .onglets{
+    display:flex;
+    flex-wrap:wrap;
+    margin-top: 5px; /* marge du haut */
+}
+nav .onglets a{
+    margin-right: 20px; /* espace entre les onglets */
+    cursor:pointer; /* modifier curseur pour cliquer */
+    text-decoration: none; /* quand passer curseur ou il y a un lien */
+    color: #fff; /* metre couleur blanc */
+}
+
+nav .onglets b{
+    margin-right: 30px; /* espace entre les onglets */
+    text-decoration: none; /* quand passer curseur ou il y a un lien */
+    color: #FFFF00; /* metre couleur blanc */
+    font-size: 30px; /* Taille du text */
+    margin-top: -12px; /* marge du haut */
+}
+
+nav .buttons button{
+    padding: 13px 20px; /* taille des boutons */
+    border:none; /* enlever bordure boutons */
+    font-size: 15px; /* taille de la police */
+    cursor:pointer; /* modifier curseur pour cliquer */
+    outline:none; /* enlever la petit bordure */
+    border-radius: 10px;
+}
+nav .buttons .login{
+    background-color: inherit; /* prendre la même couleur du fond */
+    margin-right: 10px; /* espace du coté du bouton */
+    color: #8f8f8f; /* couleur du texte du bouton */
+}
+nav .buttons .register{
+    background-color: #f54266; /* couleur du bouton */
+    margin-right: 10px; /* espace du coté du bouton */
+    color: #fff; /* couleur du texte du bouton */
+}
+
+/* Fin de la barre de navigation */
+
+nav2{
+    display:flex;
+    justify-content: center;
+    flex-wrap:wrap;
+    top: 0;
+    background-color: #141414; /* couleur du fond de la barre de navigation */
+    padding: 30px 10px; /* marge interieur */
+}
+
+nav2 .buttons button{
+    padding: 13px 20px; /* taille des boutons */
+    border:none; /* enlever bordure boutons */
+    font-size: 18px; /* taille de la police */
+    cursor:pointer; /* modifier curseur pour cliquer */
+    outline:none; /* enlever la petit bordure */
+}
+
+nav2 .buttons .tous{
+    background-color: #424949; /* couleur du bouton */
+    color: #fff; /* couleur du texte du bouton */
+    border-radius: 10px;
+}
+
+/* Partie header */
+header{
+    margin-top: 40px; /* Marge 40px sur tout les cotés */
+    background:url('img/Fortnite.png'); /* URL de l'image de fond */
+    background-repeat: no-repeat; /* pour que l'image ne se répète pas */
+    background-position: center; /* placer l'image au centre */
+    background-size: 460px 370px; /* modifier la taille de l'image */
+}
+header h1{
+    text-align: center; /* Aligner le text au centre */
+    font-size: 60px; /* Taille du text */
+    padding: 150px; /* Espace en hauteur du text */
+}
+/* Fin de la partie header */
+
+/* pied de page */
+footer{
+    background-color: #1a1a1a; /* couleur de fond */
+    padding: 25px 100px; /* marge interieur */
+    color: #828282; /* couleur du texte */
+}
+footer .colonnes{
+    display: flex; /* pour afficher les colonnes */
+    flex-wrap:wrap;
+    justify-content: space-between; /* espacer les colonnes */
+}
+/* fin du pied de page */
+
+/* Main */
+.main{
+    margin: 20px;
+    margin-top: 80px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.cards{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.cards .card{
+    margin-right: 100px;
+    cursor: pointer;
+}
+
+.cards .card img{
+    width: 350px;
+}
+
+.cards .card .card-header{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.cards .card .card-body p{
+    margin-top: -10px;
+}
+
+#fondecran {
+ /* Préserve le ratio de l'image */
+ min-width: 100%;
+ min-height: 100%;
+}
+
+@media screen and (max-width: 640px){
+  body .page{
+    margin: 10px;
+  }
+  nav .onglets{
+    display:none;
+  }
+  header{
+    margin-top: 20px;
+    background-size: 250px 250px;
+  }
+  header h1{
+    font-size: 30px;
+    padding: 100px;
+  }
+}
